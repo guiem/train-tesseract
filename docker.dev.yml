@@ -9,5 +9,5 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./src:/app/src
-    command: tail -f /dev/null
+      - .:/app
+    command: sh start.sh
