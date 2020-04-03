@@ -7,7 +7,7 @@ keyring==10.6.0
 keyrings.alt==3.0
 numpy==1.17.4
 opencv-python==4.1.1.26
-Pillow==6.2.1
+Pillow==6.2.2
 pycrypto==2.6.1
 pygobject==3.26.1
 pytesseract==0.3.0
