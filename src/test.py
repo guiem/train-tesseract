@@ -12,6 +12,6 @@ lang = sys.argv[1]
 
 img_path = '/app/data/validation/0.tif'
 img = Image.open(img_path)
-raw_text = pytesseract.image_to_string(img, lang=lang)
+raw_text = pytesseract.image_to_string(image, lang=lang, config='--psm 7')  # make sure to change your `config` if different 
 target = "The computers are becoming sentient,"
 print(f"Output: {raw_text}\nPercent coincidence: {round(SQ(None, target, raw_text).ratio()*100,2)}%")
