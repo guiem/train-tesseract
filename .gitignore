@@ -3,3 +3,4 @@
 *.pyc
 *.pyo
 src/tesstrain
+venv/
