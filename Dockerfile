@@ -27,7 +27,7 @@ RUN mkdir src && cd /app/src && \
 	unzip 4.1.0.zip && \
     cd /app/src/tesseract-4.1.0 && ./autogen.sh && ./configure && make && make install && ldconfig && \
     make training && make training-install && \
-    cd /usr/local/share/tessdata && wget https://github.com/tesseract-ocr/tessdata_best/raw/master/eng.traineddata
+    cd /usr/local/share/tessdata && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata
 
 # Setting the data prefix
 ENV TESSDATA_PREFIX=/usr/local/share/tessdata
